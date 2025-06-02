@@ -31,3 +31,5 @@
 ```
 
 4. Откройте в браузере http://localhost:5173
+
+5. Работающая ссылка: https://xyndeside.github.io/movie-catalog/
