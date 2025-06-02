@@ -14,8 +14,8 @@
 1. Склонируйте репозиторий:
 
 ```bash
-    git clone <URL_твоего_репозитория>
-    cd <папка_проекта>
+    git clone https://github.com/Xyndeside/movie-catalog.git
+    cd movie-catalog
 ```
 
 2. Установите зависимости:
