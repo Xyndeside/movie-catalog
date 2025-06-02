@@ -7,7 +7,7 @@ import {movies} from "./data.ts";
 
 function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/movie-catalog">
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<HomePage />} />
