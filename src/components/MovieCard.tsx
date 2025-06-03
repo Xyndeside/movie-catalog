@@ -1,22 +1,18 @@
+import { useNavigate } from 'react-router-dom';
+import type {Movie} from "../data.ts";
+
 interface MovieCardProps {
-	movie: {
-		id: number;
-		title: string;
-		year: number;
-		genre: string[];
-		rating: number;
-		poster: string;
-	};
+	movie: Movie;
 }
 
 export default function MovieCard({ movie }: MovieCardProps) {
 	const { id, title, year, genre, rating, poster } = movie;
+	const navigate = useNavigate();
 
 	return (
 		<div
-			key={id}
 			className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer transform transition-transform duration-300 hover:scale-105"
-			onClick={() => (window.location.href = `/details/${id}`)}
+			onClick={() => navigate(`/details/${id}`)}
 		>
 			<img src={poster} alt={title} className="w-full h-64 object-cover" />
 			<div className="p-4">

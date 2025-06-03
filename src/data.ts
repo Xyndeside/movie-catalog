@@ -5,13 +5,6 @@ export interface Movie {
     genre: string[];
     rating: number;
     poster: string;
-    description: string;
-    director: string;
-    cast: string[];
-    duration: number;
-    language: string;
-    country: string;
-    trailer: string;
 }
 
 export const movies = [
